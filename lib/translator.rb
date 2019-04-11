@@ -14,8 +14,9 @@ def load_library(file)
   hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file,emoticon)
+  hash = load_library(file)
+  hash["get_japanese_emoticon"][emoticon]
 end
 
 def get_english_meaning
