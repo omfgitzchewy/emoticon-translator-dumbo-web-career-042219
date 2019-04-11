@@ -29,4 +29,5 @@ def get_english_meaning(file, japanese_emoticon)
     hash["get_meaning"][emoticon]
   else
     "Sorry, that emoticon was not found"
+  end
 end
