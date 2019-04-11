@@ -9,9 +9,7 @@ def load_library(file)
 
   emoticons.each do |word, set|
     hash["get_emoticon"][set.first] = set.last
-    binding.pry
     hash["get_meaning"][set.last] = word
-    binding.pry
   end
   hash
   binding.pry
