@@ -14,7 +14,7 @@ def load_library(file)
   hash
 end
 
-def get_japanese_emoticon(file,emoticon)
+def get_japanese_emoticon(file, english_emoticon)
   hash = load_library(file)
   if hash["get_emoticon"][emoticon] != nil
     hash["get_emoticon"][emoticon]
@@ -23,6 +23,10 @@ def get_japanese_emoticon(file,emoticon)
   end
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file, japanese_emoticon)
+  hash = load_library(file)
+  if hash["get_meaning"][emoticon] != nil
+    hash["get_meaning"][emoticon]
+  else
+    "Sorry, that emoticon was not found"
 end
