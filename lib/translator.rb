@@ -3,9 +3,9 @@ require "pry"
 
 def load_library(file)
   emoticons = YAML.load_file(file)
-  hash = Hash.new
-  hash["get_emoticon"] = Hash.new
-  hash["get_meaning"] = Hash.new
+  hash = {}
+  hash["get_emoticon"] = {}
+  hash["get_meaning"] = {}
 
   emoticons.each do |word, set|
     hash["get_emoticon"][set.first] = set.last
