@@ -4,7 +4,7 @@ def load_library(file)
   emoticons = YAML.load_file(file)
   hash = {}
   hash["get_emoticon"] = {}
-  hash.["get_meaning"] = {}
+  hash["get_meaning"] = {}
 
   emoticons.each do |word, set|
     hash.["get_emoticon"][set.first] = set.last
