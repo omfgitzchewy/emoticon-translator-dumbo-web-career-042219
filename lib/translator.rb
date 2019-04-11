@@ -12,7 +12,6 @@ def load_library(file)
     hash["get_meaning"][set.last] = word
   end
   hash
-  binding.pry
 end
 
 def get_japanese_emoticon
