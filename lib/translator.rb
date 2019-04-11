@@ -7,8 +7,8 @@ def load_library(file)
   hash.["get_meaning"] = {}
 
   emoticons.each do |word, set|
-    hash.["get_emoticon"][set.first] = set.last
-    hash.["get_meaning"][set.last] = word
+    hash.["get_emoticon"][set.last] = set.first
+    hash.["get_meaning"][set.first] = word
   end
   hash
 end
